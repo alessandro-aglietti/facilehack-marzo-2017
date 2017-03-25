@@ -30,7 +30,7 @@ export class PiuFacileHomeOrOffice extends Component {
     return () => {
       console.log( "handleNext to " + to )
       thiss.props.update_persona( {
-        home_or_office: to === types.TO_UFFICIO ? types.OFFICE : types.HOME
+        home_or_office: to === types.TO_OFFICE ? types.OFFICE : types.HOME
       } )
       thiss.props.nothing( { "what": to } )
       thiss.props.push( to )

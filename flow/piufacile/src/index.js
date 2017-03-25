@@ -14,12 +14,18 @@ import PiuFacileOffice from './components/PiuFacileOffice'
 import PiuFacileAutoDetect from './components/PiuFacileAutoDetect'
 import PiuFacileAskCap from './components/PiuFacileAskCap'
 import PiuFacileAskDigital from './components/PiuFacileAskDigital'
+import PiuFacileCostCommitment from './components/PiuFacileCostCommitment'
+import PiuFacilePersonaResume from './components/PiuFacilePersonaResume'
 
-import { Router, Route, hashHistory } from 'react-router'
+import {
+  Router,
+  Route,
+  hashHistory
+} from 'react-router'
 
 import { syncHistoryWithStore } from 'react-router-redux'
 
-const history = syncHistoryWithStore(hashHistory, store)
+const history = syncHistoryWithStore( hashHistory, store )
 
 ReactDOM.render(
   <Provider store={store}>
@@ -32,6 +38,8 @@ ReactDOM.render(
         <Route path="/phase/auto_detect" component={PiuFacileAutoDetect}/>
         <Route path="/phase/ask_cap" component={PiuFacileAskCap}/>
         <Route path="/phase/ask_digital" component={PiuFacileAskDigital}/>
+        <Route path="/phase/cost_commitment" component={PiuFacileCostCommitment}/>
+        <Route path="/phase/persona_resume" component={PiuFacilePersonaResume}/>
       </div>
     </Router>
   </Provider>,

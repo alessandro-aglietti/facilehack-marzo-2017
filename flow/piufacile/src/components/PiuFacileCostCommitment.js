@@ -15,23 +15,23 @@ import {
 } from 'react-bootstrap';
 
 import {
-  nothing,
   update_persona,
+  nothing
 } from '../actions/PiuFacileActions'
 
-export class PiuFacileAskDigital extends Component {
+export class PiuFacileCostCommitment extends Component {
 
   constructor( props ) {
     super( props )
     this.state = {}
   }
 
-  handleNext( to, digital_value ) {
+  handleNext( to, cost_commitment ) {
     const thiss = this
     return () => {
-      console.log( "handleNext too " + to )
+      console.log( "handleNext to " + to )
       thiss.props.update_persona( {
-        digital_value
+        cost_commitment
       } )
       this.props.nothing( { "what": to } )
       this.props.push( to )
@@ -43,27 +43,30 @@ export class PiuFacileAskDigital extends Component {
       <Grid>
         <Row>
           <Col xs={12} md={12}>
-            <h1>Ask digital</h1>
+            <h1>Cost commitment</h1>
           </Col>
         </Row>
         <Row>
           <Col xs={12} md={12}>
-            <h3>Quanto ti senti digitale?</h3>
+            <h3>Quanto vuoi spendere?</h3>
           </Col>
         </Row>
         <Row>
           <Col xs={12} md={12}>
             <FormGroup>
-              <Radio onClick={this.handleNext( types.TO_COST_COMMITMENT, 1 )} name={"ask_digital"} inline>
-                1
+              <Radio onClick={this.handleNext( types.TO_PERSONA_RESUME, '<20' )} name={"cost_commitment"} inline>
+                &lt;20
               </Radio>
               {' '}
-              <Radio onClick={this.handleNext( types.TO_COST_COMMITMENT, 2 )} name={"ask_digital"} inline>
-                2
+              <Radio onClick={this.handleNext( types.TO_PERSONA_RESUME, '<30' )} name={"cost_commitment"} inline>
+                &lt;30
               </Radio>
               {' '}
-              <Radio onClick={this.handleNext( types.TO_COST_COMMITMENT, 3 )} name={"ask_digital"} inline>
-                3
+              <Radio onClick={this.handleNext( types.TO_PERSONA_RESUME, '<40' )} name={"cost_commitment"} inline>
+                &lt;40
+              </Radio>
+              <Radio onClick={this.handleNext( types.TO_PERSONA_RESUME, '>40' )} name={"cost_commitment"} inline>
+                &gt;40
               </Radio>
             </FormGroup>
           </Col>
@@ -79,9 +82,9 @@ const mapStateToProps = ( state ) => ({
 
 export default connect(
   mapStateToProps, {
-    nothing,
     update_persona,
+    nothing,
     push
   }
-)( PiuFacileAskDigital )
+)( PiuFacileCostCommitment )
 
