@@ -21,7 +21,7 @@ export class PiuFacile extends Component {
     console.log( " Scegli la tua ADSL con +Facile!" )
     const path = `/phase/home_or_office`
 //    browserHistory.push( path )
-    this.props.do_nothing( { "what": path } )
+    this.props.nothing( { "what": path } )
   }
 
   render() {
@@ -36,11 +36,12 @@ export class PiuFacile extends Component {
 }
 
 const mapStateToProps = ( state ) => ({
-  piu_facile: state.piu_facile,
-  do_nothing: nothing
+  piu_facile: state.piu_facile
 })
 
 export default connect(
-  mapStateToProps
+  mapStateToProps, {
+    nothing
+  }
 )( PiuFacile )
 
