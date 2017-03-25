@@ -11,9 +11,10 @@ import { hashHistory } from 'react-router'
 import thunkMiddleware from 'redux-thunk'
 
 const initialState = {
-  piu_facile: {
+  piu_facile          : {
     "what": false
-  }
+  },
+  auto_detect_location: false
 }
 
 const composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;

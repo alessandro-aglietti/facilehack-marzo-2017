@@ -54,7 +54,8 @@ const fetchData = ( actionType ) => ( payload ) => () => {
 }
 
 export const nothing = createBasicCreator( types.NOTHING )
+export const auto_detect_location_callback = createBasicCreator( types.AUTO_DETECT_LOCATION_CALLBACK )
 export const auto_detect_location = (fetchData( types.AUTO_DETECT_LOCATION ))({
   uri: '/auto_detect_location.json',
-  callback: types.AUTO_DETECT_LOCATION_CALLBACK
+  callback: auto_detect_location_callback
 })

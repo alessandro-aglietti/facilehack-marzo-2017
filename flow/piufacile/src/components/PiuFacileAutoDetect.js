@@ -45,13 +45,21 @@ export class PiuFacileAutoDetect extends Component {
             <h1>Auto detect</h1>
           </Col>
         </Row>
+        { this.props.auto_detect_location_data &&
+        <Row>
+          <Col xs={12} md={12}>
+            <h4>{this.props.auto_detect_location_data.formatted_address}</h4>
+          </Col>
+        </Row>
+        }
       </Grid>
     )
   }
 }
 
 const mapStateToProps = ( state ) => ({
-  piu_facile: state.piu_facile
+  piu_facile               : state.piu_facile,
+  auto_detect_location_data: state.auto_detect_location,
 })
 
 export default connect(
