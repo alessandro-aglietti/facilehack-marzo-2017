@@ -2,6 +2,12 @@ import React, { Component } from 'react'
 
 import { connect } from 'react-redux'
 
+import {
+  Grid,
+  Row,
+  Col
+} from 'react-bootstrap';
+
 export class PiuFacileHomeOrOffice extends Component {
 
   constructor( props ) {
@@ -11,7 +17,13 @@ export class PiuFacileHomeOrOffice extends Component {
 
   render() {
     return (
-      <h1>PiuFacileHomeOrOffice</h1>
+      <Grid>
+        <Row>
+          <Col xs={8} md={12}>
+            <h1>Piu Facile Home Or Office</h1>
+          </Col>
+        </Row>
+      </Grid>
     )
   }
 }
