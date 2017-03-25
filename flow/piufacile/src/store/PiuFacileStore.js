@@ -17,7 +17,8 @@ const initialState = {
   auto_detect_location: false,
   auto_detect_speed: false,
   persona: {
-    auto_detect : 'no'
+    auto_detect : 'no',
+    speedMbps : 'no',
   },
 }
 
