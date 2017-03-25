@@ -14,7 +14,8 @@ const initialState = {
   piu_facile          : {
     "what": false
   },
-  auto_detect_location: false
+  auto_detect_location: false,
+  auto_detect_speed: false
 }
 
 const composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;

@@ -20,9 +20,19 @@ export const auto_detect_location = function piu_facile( state = {}, action ) {
   }
 }
 
+export const auto_detect_speed = function piu_facile( state = {}, action ) {
+  switch ( action.type ) {
+    case types.AUTO_DETECT_SPEED_CALLBACK:
+      return Object.assign( {}, state, action.payload.data )
+    default :
+      return state
+  }
+}
+
 const rootReducer = combineReducers( {
   piu_facile,
   auto_detect_location,
+  auto_detect_speed,
   routing: routerReducer,
 } )
 

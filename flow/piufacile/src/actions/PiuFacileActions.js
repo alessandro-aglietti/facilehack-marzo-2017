@@ -59,3 +59,9 @@ export const auto_detect_location = (fetchData( types.AUTO_DETECT_LOCATION ))({
   uri: '/auto_detect_location.json',
   callback: auto_detect_location_callback
 })
+
+export const auto_detect_speed_callback = createBasicCreator( types.AUTO_DETECT_SPEED_CALLBACK )
+export const auto_detect_speed = (fetchData( types.AUTO_DETECT_SPEED ))({
+  uri: '/auto_detect_speed.json',
+  callback: auto_detect_speed_callback
+})

@@ -13,6 +13,7 @@ import {
 import {
   nothing,
   auto_detect_location,
+  auto_detect_speed,
 } from '../actions/PiuFacileActions'
 
 export class PiuFacileAutoDetect extends Component {
@@ -25,6 +26,10 @@ export class PiuFacileAutoDetect extends Component {
   componentDidMount() {
     this.props.auto_detect_location().then( ( json ) => {
       console.log( "componentDidMount auto_detect_location then" )
+    } );
+
+    this.props.auto_detect_speed().then( ( json ) => {
+      console.log( "componentDidMount auto_detect_speed then" )
     } );
   }
 
@@ -52,6 +57,13 @@ export class PiuFacileAutoDetect extends Component {
           </Col>
         </Row>
         }
+        { this.props.auto_detect_speed_data &&
+        <Row>
+          <Col xs={12} md={12}>
+            <h4>{this.props.auto_detect_speed_data.speedMbps} Mbps</h4>
+          </Col>
+        </Row>
+        }
       </Grid>
     )
   }
@@ -60,12 +72,14 @@ export class PiuFacileAutoDetect extends Component {
 const mapStateToProps = ( state ) => ({
   piu_facile               : state.piu_facile,
   auto_detect_location_data: state.auto_detect_location,
+  auto_detect_speed_data   : state.auto_detect_speed,
 })
 
 export default connect(
   mapStateToProps, {
     nothing,
     auto_detect_location,
+    auto_detect_speed,
     push
   }
 )( PiuFacileAutoDetect )
