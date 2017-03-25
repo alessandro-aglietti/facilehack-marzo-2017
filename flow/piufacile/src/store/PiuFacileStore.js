@@ -15,7 +15,10 @@ const initialState = {
     "what": false
   },
   auto_detect_location: false,
-  auto_detect_speed: false
+  auto_detect_speed: false,
+  persona: {
+    auto_detect : 'no'
+  },
 }
 
 const composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;

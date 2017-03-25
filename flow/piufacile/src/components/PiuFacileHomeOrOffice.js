@@ -1,5 +1,7 @@
 import React, { Component } from 'react'
 
+import * as types from '../constants/ActionTypes'
+
 import { connect } from 'react-redux'
 
 import { push } from 'react-router-redux'
@@ -12,7 +14,8 @@ import {
 } from 'react-bootstrap';
 
 import {
-  nothing
+  nothing,
+  update_persona
 } from '../actions/PiuFacileActions'
 
 export class PiuFacileHomeOrOffice extends Component {
@@ -23,17 +26,18 @@ export class PiuFacileHomeOrOffice extends Component {
   }
 
   handleNext( to ) {
+    const thiss = this
     return () => {
       console.log( "handleNext to " + to )
-      this.props.nothing( { "what": to } )
-      this.props.push( to )
+      thiss.props.update_persona( {
+        home_or_office: to === types.TO_UFFICIO ? types.OFFICE : types.HOME
+      } )
+      thiss.props.nothing( { "what": to } )
+      thiss.props.push( to )
     }
   }
 
   render() {
-    const TO_UFFICIO = `/phase/office`
-    const TO_HOME    = `/phase/casa`
-
     return (
       <Grid>
         <Row>
@@ -49,14 +53,14 @@ export class PiuFacileHomeOrOffice extends Component {
         <Row>
           <Col xs={6} md={6}>
             <Button
-              onClick={this.handleNext( TO_HOME )}
+              onClick={this.handleNext( types.TO_HOME )}
             >
               Casa
             </Button>
           </Col>
           <Col xs={6} md={6}>
             <Button
-              onClick={this.handleNext( TO_UFFICIO )}
+              onClick={this.handleNext( types.TO_OFFICE )}
             >
               Ufficio
             </Button>
@@ -74,6 +78,7 @@ const mapStateToProps = ( state ) => ({
 export default connect(
   mapStateToProps, {
     nothing,
+    update_persona,
     push
   }
 )( PiuFacileHomeOrOffice )

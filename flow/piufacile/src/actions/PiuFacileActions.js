@@ -53,15 +53,15 @@ const fetchData = ( actionType ) => ( payload ) => () => {
   }
 }
 
-export const nothing = createBasicCreator( types.NOTHING )
+export const nothing                       = createBasicCreator( types.NOTHING )
+export const update_persona                = createBasicCreator( types.UPDATE_PERSONA )
 export const auto_detect_location_callback = createBasicCreator( types.AUTO_DETECT_LOCATION_CALLBACK )
-export const auto_detect_location = (fetchData( types.AUTO_DETECT_LOCATION ))({
-  uri: '/auto_detect_location.json',
+export const auto_detect_location          = (fetchData( types.AUTO_DETECT_LOCATION ))( {
+  uri     : '/auto_detect_location.json',
   callback: auto_detect_location_callback
-})
-
+} )
 export const auto_detect_speed_callback = createBasicCreator( types.AUTO_DETECT_SPEED_CALLBACK )
-export const auto_detect_speed = (fetchData( types.AUTO_DETECT_SPEED ))({
-  uri: '/auto_detect_speed.json',
+export const auto_detect_speed          = (fetchData( types.AUTO_DETECT_SPEED ))( {
+  uri     : '/auto_detect_speed.json',
   callback: auto_detect_speed_callback
-})
+} )

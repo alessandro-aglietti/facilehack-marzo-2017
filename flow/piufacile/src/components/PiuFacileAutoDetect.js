@@ -4,16 +4,20 @@ import { connect } from 'react-redux'
 
 import { push } from 'react-router-redux'
 
+import * as types from '../constants/ActionTypes'
+
 import {
   Grid,
   Row,
   Col,
+  Button,
 } from 'react-bootstrap';
 
 import {
   nothing,
   auto_detect_location,
   auto_detect_speed,
+  update_persona,
 } from '../actions/PiuFacileActions'
 
 export class PiuFacileAutoDetect extends Component {
@@ -24,13 +28,31 @@ export class PiuFacileAutoDetect extends Component {
   }
 
   componentDidMount() {
+    const thiss = this
+
     this.props.auto_detect_location().then( ( json ) => {
       console.log( "componentDidMount auto_detect_location then" )
+      thiss.props.update_persona( {
+        cap: thiss.props.auto_detect_location_data.address_components.reduce( ( accumulator, currentValue ) => {
+          if ( currentValue.types.indexOf( "postal_code" ) !== -1 ) {
+            return currentValue.long_name
+          } else {
+            return accumulator
+          }
+        } )
+      } )
     } );
 
     this.props.auto_detect_speed().then( ( json ) => {
       console.log( "componentDidMount auto_detect_speed then" )
+      thiss.props.update_persona( {
+        speedMbps: thiss.props.auto_detect_speed_data.speedMbps
+      } )
     } );
+
+    this.props.update_persona( {
+      auto_detect: 'si'
+    } )
   }
 
   handleNext( to ) {
@@ -64,6 +86,13 @@ export class PiuFacileAutoDetect extends Component {
           </Col>
         </Row>
         }
+        { this.props.auto_detect_speed_data && this.props.auto_detect_location_data &&
+        <Button
+          onClick={this.handleNext( types.TO_ASK_DIGITAL )}
+        >
+          Ok! Procedi!
+        </Button>
+        }
       </Grid>
     )
   }
@@ -80,6 +109,7 @@ export default connect(
     nothing,
     auto_detect_location,
     auto_detect_speed,
+    update_persona,
     push
   }
 )( PiuFacileAutoDetect )

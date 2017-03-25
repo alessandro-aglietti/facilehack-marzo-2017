@@ -29,10 +29,20 @@ export const auto_detect_speed = function piu_facile( state = {}, action ) {
   }
 }
 
+export const persona = function piu_facile( state = {}, action ) {
+  switch ( action.type ) {
+    case types.UPDATE_PERSONA:
+      return Object.assign( {}, state, action.payload )
+    default :
+      return state
+  }
+}
+
 const rootReducer = combineReducers( {
   piu_facile,
   auto_detect_location,
   auto_detect_speed,
+  persona,
   routing: routerReducer,
 } )
 
