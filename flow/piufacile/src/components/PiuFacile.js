@@ -1,7 +1,8 @@
 import React, { Component } from 'react'
-import { browserHistory } from 'react-router'
 
 import { connect } from 'react-redux'
+
+import { push } from 'react-router-redux'
 
 import { Button } from 'react-bootstrap';
 
@@ -20,8 +21,8 @@ export class PiuFacile extends Component {
   handleNext() {
     console.log( " Scegli la tua ADSL con +Facile!" )
     const path = `/phase/home_or_office`
-//    browserHistory.push( path )
     this.props.nothing( { "what": path } )
+    this.props.push( path )
   }
 
   render() {
@@ -41,7 +42,8 @@ const mapStateToProps = ( state ) => ({
 
 export default connect(
   mapStateToProps, {
-    nothing
+    nothing,
+    push
   }
 )( PiuFacile )
 

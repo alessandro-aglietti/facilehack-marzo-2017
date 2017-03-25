@@ -1,5 +1,5 @@
 import { combineReducers } from 'redux'
-//import { routerReducer } from 'react-router-redux'
+import { routerReducer } from 'react-router-redux'
 import * as types from '../constants/ActionTypes'
 
 export const piu_facile = function piu_facile( state = {}, action ) {
@@ -13,7 +13,7 @@ export const piu_facile = function piu_facile( state = {}, action ) {
 
 const rootReducer = combineReducers( {
   piu_facile,
-//  routing: routerReducer,
+  routing: routerReducer,
 } )
 
 export default rootReducer
