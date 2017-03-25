@@ -1,12 +1,17 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import App from './App';
 import './index.css';
 
 import 'bootstrap/dist/css/bootstrap.css';
 import 'bootstrap/dist/css/bootstrap-theme.css';
 
+import { Provider } from 'react-redux'
+import {store} from './store/PiuFacileStore'
+import PiuFacile from './components/PiuFacile'
+
 ReactDOM.render(
-  <App />,
-  document.getElementById('root')
+  <Provider store={store}>
+    <PiuFacile />
+  </Provider>,
+  document.getElementById( 'root' )
 );
