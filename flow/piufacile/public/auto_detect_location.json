@@ -1,0 +1,710 @@
+{
+  "results": [
+    {
+      "address_components": [
+        {
+          "long_name": "17",
+          "short_name": "17",
+          "types": [
+            "street_number"
+          ]
+        },
+        {
+          "long_name": "Viale Molise",
+          "short_name": "Viale Molise",
+          "types": [
+            "route"
+          ]
+        },
+        {
+          "long_name": "Milano",
+          "short_name": "Milano",
+          "types": [
+            "locality",
+            "political"
+          ]
+        },
+        {
+          "long_name": "Milano",
+          "short_name": "Milano",
+          "types": [
+            "administrative_area_level_3",
+            "political"
+          ]
+        },
+        {
+          "long_name": "Città Metropolitana di Milano",
+          "short_name": "MI",
+          "types": [
+            "administrative_area_level_2",
+            "political"
+          ]
+        },
+        {
+          "long_name": "Lombardia",
+          "short_name": "Lombardia",
+          "types": [
+            "administrative_area_level_1",
+            "political"
+          ]
+        },
+        {
+          "long_name": "Italy",
+          "short_name": "IT",
+          "types": [
+            "country",
+            "political"
+          ]
+        },
+        {
+          "long_name": "20137",
+          "short_name": "20137",
+          "types": [
+            "postal_code"
+          ]
+        }
+      ],
+      "formatted_address": "Viale Molise, 17, 20137 Milano, Italy",
+      "geometry": {
+        "location": {
+          "lat": 45.4533475,
+          "lng": 9.2237393
+        },
+        "location_type": "ROOFTOP",
+        "viewport": {
+          "northeast": {
+            "lat": 45.4546964802915,
+            "lng": 9.225088280291502
+          },
+          "southwest": {
+            "lat": 45.4519985197085,
+            "lng": 9.222390319708497
+          }
+        }
+      },
+      "place_id": "ChIJWXThACvEhkcRNX0ZNNxPn-0",
+      "types": [
+        "street_address"
+      ]
+    },
+    {
+      "address_components": [
+        {
+          "long_name": "Calvairate",
+          "short_name": "Calvairate",
+          "types": [
+            "neighborhood",
+            "political"
+          ]
+        },
+        {
+          "long_name": "Milan",
+          "short_name": "Milan",
+          "types": [
+            "locality",
+            "political"
+          ]
+        },
+        {
+          "long_name": "Milan",
+          "short_name": "Milan",
+          "types": [
+            "administrative_area_level_3",
+            "political"
+          ]
+        },
+        {
+          "long_name": "Metropolitan City of Milan",
+          "short_name": "MI",
+          "types": [
+            "administrative_area_level_2",
+            "political"
+          ]
+        },
+        {
+          "long_name": "Lombardy",
+          "short_name": "Lombardy",
+          "types": [
+            "administrative_area_level_1",
+            "political"
+          ]
+        },
+        {
+          "long_name": "Italy",
+          "short_name": "IT",
+          "types": [
+            "country",
+            "political"
+          ]
+        }
+      ],
+      "formatted_address": "Calvairate, Milan, Italy",
+      "geometry": {
+        "bounds": {
+          "northeast": {
+            "lat": 45.4595888,
+            "lng": 9.236835899999999
+          },
+          "southwest": {
+            "lat": 45.4460717,
+            "lng": 9.211387
+          }
+        },
+        "location": {
+          "lat": 45.4528661,
+          "lng": 9.223680399999999
+        },
+        "location_type": "APPROXIMATE",
+        "viewport": {
+          "northeast": {
+            "lat": 45.4595888,
+            "lng": 9.236835899999999
+          },
+          "southwest": {
+            "lat": 45.4460717,
+            "lng": 9.211387
+          }
+        }
+      },
+      "place_id": "ChIJEeZgJyvEhkcR73yyDxOxk90",
+      "types": [
+        "neighborhood",
+        "political"
+      ]
+    },
+    {
+      "address_components": [
+        {
+          "long_name": "Milan",
+          "short_name": "Milan",
+          "types": [
+            "locality",
+            "political"
+          ]
+        },
+        {
+          "long_name": "Milan",
+          "short_name": "Milan",
+          "types": [
+            "administrative_area_level_3",
+            "political"
+          ]
+        },
+        {
+          "long_name": "Metropolitan City of Milan",
+          "short_name": "MI",
+          "types": [
+            "administrative_area_level_2",
+            "political"
+          ]
+        },
+        {
+          "long_name": "Lombardy",
+          "short_name": "Lombardy",
+          "types": [
+            "administrative_area_level_1",
+            "political"
+          ]
+        },
+        {
+          "long_name": "Italy",
+          "short_name": "IT",
+          "types": [
+            "country",
+            "political"
+          ]
+        }
+      ],
+      "formatted_address": "Milan, Italy",
+      "geometry": {
+        "bounds": {
+          "northeast": {
+            "lat": 45.535689,
+            "lng": 9.2903463
+          },
+          "southwest": {
+            "lat": 45.3897787,
+            "lng": 9.065118199999999
+          }
+        },
+        "location": {
+          "lat": 45.4654219,
+          "lng": 9.1859243
+        },
+        "location_type": "APPROXIMATE",
+        "viewport": {
+          "northeast": {
+            "lat": 45.535689,
+            "lng": 9.2903463
+          },
+          "southwest": {
+            "lat": 45.3897787,
+            "lng": 9.065118199999999
+          }
+        }
+      },
+      "place_id": "ChIJ53USP0nBhkcRjQ50xhPN_zw",
+      "types": [
+        "locality",
+        "political"
+      ]
+    },
+    {
+      "address_components": [
+        {
+          "long_name": "20137",
+          "short_name": "20137",
+          "types": [
+            "postal_code"
+          ]
+        },
+        {
+          "long_name": "Milan",
+          "short_name": "Milan",
+          "types": [
+            "locality",
+            "political"
+          ]
+        },
+        {
+          "long_name": "Milan",
+          "short_name": "Milan",
+          "types": [
+            "administrative_area_level_3",
+            "political"
+          ]
+        },
+        {
+          "long_name": "Metropolitan City of Milan",
+          "short_name": "MI",
+          "types": [
+            "administrative_area_level_2",
+            "political"
+          ]
+        },
+        {
+          "long_name": "Lombardy",
+          "short_name": "Lombardy",
+          "types": [
+            "administrative_area_level_1",
+            "political"
+          ]
+        },
+        {
+          "long_name": "Italy",
+          "short_name": "IT",
+          "types": [
+            "country",
+            "political"
+          ]
+        }
+      ],
+      "formatted_address": "20137 Milan, Italy",
+      "geometry": {
+        "bounds": {
+          "northeast": {
+            "lat": 45.462263,
+            "lng": 9.237587999999999
+          },
+          "southwest": {
+            "lat": 45.4457691,
+            "lng": 9.210018
+          }
+        },
+        "location": {
+          "lat": 45.4528661,
+          "lng": 9.223680399999999
+        },
+        "location_type": "APPROXIMATE",
+        "viewport": {
+          "northeast": {
+            "lat": 45.462263,
+            "lng": 9.237587999999999
+          },
+          "southwest": {
+            "lat": 45.4457691,
+            "lng": 9.210018
+          }
+        }
+      },
+      "place_id": "ChIJ3enIiirEhkcRALDhegV4Bhw",
+      "types": [
+        "postal_code"
+      ]
+    },
+    {
+      "address_components": [
+        {
+          "long_name": "Milan",
+          "short_name": "Milan",
+          "types": [
+            "administrative_area_level_3",
+            "political"
+          ]
+        },
+        {
+          "long_name": "Metropolitan City of Milan",
+          "short_name": "MI",
+          "types": [
+            "administrative_area_level_2",
+            "political"
+          ]
+        },
+        {
+          "long_name": "Lombardy",
+          "short_name": "Lombardy",
+          "types": [
+            "administrative_area_level_1",
+            "political"
+          ]
+        },
+        {
+          "long_name": "Italy",
+          "short_name": "IT",
+          "types": [
+            "country",
+            "political"
+          ]
+        }
+      ],
+      "formatted_address": "Milan, Metropolitan City of Milan, Italy",
+      "geometry": {
+        "bounds": {
+          "northeast": {
+            "lat": 45.5359728,
+            "lng": 9.2779153
+          },
+          "southwest": {
+            "lat": 45.3871019,
+            "lng": 9.0410965
+          }
+        },
+        "location": {
+          "lat": 45.4789687,
+          "lng": 9.165156099999999
+        },
+        "location_type": "APPROXIMATE",
+        "viewport": {
+          "northeast": {
+            "lat": 45.5359728,
+            "lng": 9.2779153
+          },
+          "southwest": {
+            "lat": 45.3871019,
+            "lng": 9.0410965
+          }
+        }
+      },
+      "place_id": "ChIJPaOhy0zBhkcRkBp7bVbeMKY",
+      "types": [
+        "administrative_area_level_3",
+        "political"
+      ]
+    },
+    {
+      "address_components": [
+        {
+          "long_name": "Metropolitan City of Milan",
+          "short_name": "MI",
+          "types": [
+            "administrative_area_level_2",
+            "political"
+          ]
+        },
+        {
+          "long_name": "Lombardy",
+          "short_name": "Lombardy",
+          "types": [
+            "administrative_area_level_1",
+            "political"
+          ]
+        },
+        {
+          "long_name": "Italy",
+          "short_name": "IT",
+          "types": [
+            "country",
+            "political"
+          ]
+        }
+      ],
+      "formatted_address": "Metropolitan City of Milan, Italy",
+      "geometry": {
+        "bounds": {
+          "northeast": {
+            "lat": 45.6426684,
+            "lng": 9.551578599999999
+          },
+          "southwest": {
+            "lat": 45.161534,
+            "lng": 8.7061099
+          }
+        },
+        "location": {
+          "lat": 45.458626,
+          "lng": 9.181873
+        },
+        "location_type": "APPROXIMATE",
+        "viewport": {
+          "northeast": {
+            "lat": 45.6426684,
+            "lng": 9.551578599999999
+          },
+          "southwest": {
+            "lat": 45.2649877,
+            "lng": 8.7061104
+          }
+        }
+      },
+      "place_id": "ChIJlduiODLChkcRUH5mLgJ4BgM",
+      "types": [
+        "administrative_area_level_2",
+        "political"
+      ]
+    },
+    {
+      "address_components": [
+        {
+          "long_name": "Milan Metropolitan Area",
+          "short_name": "Milan Metropolitan Area",
+          "types": [
+            "political"
+          ]
+        },
+        {
+          "long_name": "Lombardy",
+          "short_name": "Lombardy",
+          "types": [
+            "administrative_area_level_1",
+            "political"
+          ]
+        },
+        {
+          "long_name": "Italy",
+          "short_name": "IT",
+          "types": [
+            "country",
+            "political"
+          ]
+        }
+      ],
+      "formatted_address": "Milan Metropolitan Area, Italy",
+      "geometry": {
+        "bounds": {
+          "northeast": {
+            "lat": 45.8628287,
+            "lng": 9.551578599999999
+          },
+          "southwest": {
+            "lat": 45.2649877,
+            "lng": 8.5522925
+          }
+        },
+        "location": {
+          "lat": 45.6068924,
+          "lng": 9.2299404
+        },
+        "location_type": "APPROXIMATE",
+        "viewport": {
+          "northeast": {
+            "lat": 45.8628287,
+            "lng": 9.551578599999999
+          },
+          "southwest": {
+            "lat": 45.2649877,
+            "lng": 8.5522925
+          }
+        }
+      },
+      "place_id": "ChIJoZyIBlqRhkcRqW8L-_-6Lew",
+      "types": [
+        "political"
+      ]
+    },
+    {
+      "address_components": [
+        {
+          "long_name": "Lombardy",
+          "short_name": "Lombardy",
+          "types": [
+            "administrative_area_level_1",
+            "political"
+          ]
+        },
+        {
+          "long_name": "Italy",
+          "short_name": "IT",
+          "types": [
+            "country",
+            "political"
+          ]
+        }
+      ],
+      "formatted_address": "Lombardy, Italy",
+      "geometry": {
+        "bounds": {
+          "northeast": {
+            "lat": 46.6351853,
+            "lng": 11.4276993
+          },
+          "southwest": {
+            "lat": 44.6796491,
+            "lng": 8.4978605
+          }
+        },
+        "location": {
+          "lat": 45.47906709999999,
+          "lng": 9.8452433
+        },
+        "location_type": "APPROXIMATE",
+        "viewport": {
+          "northeast": {
+            "lat": 46.6351853,
+            "lng": 11.4276993
+          },
+          "southwest": {
+            "lat": 44.6796491,
+            "lng": 8.4978605
+          }
+        }
+      },
+      "place_id": "ChIJf4M-GsNEgUcR1JMVKCIm8qY",
+      "types": [
+        "administrative_area_level_1",
+        "political"
+      ]
+    },
+    {
+      "address_components": [
+        {
+          "long_name": "Italy",
+          "short_name": "IT",
+          "types": [
+            "country",
+            "political"
+          ]
+        }
+      ],
+      "formatted_address": "Italy",
+      "geometry": {
+        "bounds": {
+          "northeast": {
+            "lat": 47.092,
+            "lng": 18.7975999
+          },
+          "southwest": {
+            "lat": 35.4897,
+            "lng": 6.6267201
+          }
+        },
+        "location": {
+          "lat": 41.87194,
+          "lng": 12.56738
+        },
+        "location_type": "APPROXIMATE",
+        "viewport": {
+          "northeast": {
+            "lat": 47.092,
+            "lng": 18.5205015
+          },
+          "southwest": {
+            "lat": 35.4930328,
+            "lng": 6.6267231
+          }
+        }
+      },
+      "place_id": "ChIJA9KNRIL-1BIRb15jJFz1LOI",
+      "types": [
+        "country",
+        "political"
+      ]
+    },
+    {
+      "address_components": [
+        {
+          "long_name": "V.le Molise Via Cadibona",
+          "short_name": "V.le Molise Via Cadibona",
+          "types": [
+            "bus_station",
+            "establishment",
+            "point_of_interest",
+            "transit_station"
+          ]
+        },
+        {
+          "long_name": "Milano",
+          "short_name": "Milano",
+          "types": [
+            "locality",
+            "political"
+          ]
+        },
+        {
+          "long_name": "Milano",
+          "short_name": "Milano",
+          "types": [
+            "administrative_area_level_3",
+            "political"
+          ]
+        },
+        {
+          "long_name": "Città Metropolitana di Milano",
+          "short_name": "MI",
+          "types": [
+            "administrative_area_level_2",
+            "political"
+          ]
+        },
+        {
+          "long_name": "Lombardia",
+          "short_name": "Lombardia",
+          "types": [
+            "administrative_area_level_1",
+            "political"
+          ]
+        },
+        {
+          "long_name": "Italy",
+          "short_name": "IT",
+          "types": [
+            "country",
+            "political"
+          ]
+        },
+        {
+          "long_name": "20137",
+          "short_name": "20137",
+          "types": [
+            "postal_code"
+          ]
+        }
+      ],
+      "formatted_address": "V.le Molise Via Cadibona, 20137 Milano, Italy",
+      "geometry": {
+        "location": {
+          "lat": 45.45392529999999,
+          "lng": 9.223863699999999
+        },
+        "location_type": "APPROXIMATE",
+        "viewport": {
+          "northeast": {
+            "lat": 45.4552742802915,
+            "lng": 9.225212680291502
+          },
+          "southwest": {
+            "lat": 45.4525763197085,
+            "lng": 9.222514719708498
+          }
+        }
+      },
+      "place_id": "ChIJZRNdXirEhkcRB_L9QCbJX78",
+      "types": [
+        "bus_station",
+        "establishment",
+        "point_of_interest",
+        "transit_station"
+      ]
+    }
+  ],
+  "status": "OK"
+}
