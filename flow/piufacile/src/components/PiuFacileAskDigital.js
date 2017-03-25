@@ -8,14 +8,15 @@ import {
   Grid,
   Row,
   Col,
-  Button
+  Radio,
+  FormGroup,
 } from 'react-bootstrap';
 
 import {
   nothing
 } from '../actions/PiuFacileActions'
 
-export class PiuFacileHomeOrOffice extends Component {
+export class PiuFacileAskDigital extends Component {
 
   constructor( props ) {
     super( props )
@@ -31,35 +32,33 @@ export class PiuFacileHomeOrOffice extends Component {
   }
 
   render() {
-    const TO_UFFICIO = `/phase/office`
-    const TO_HOME    = `/phase/casa`
-
     return (
       <Grid>
         <Row>
           <Col xs={12} md={12}>
-            <h1>Home Or Office</h1>
+            <h1>Ask digital</h1>
           </Col>
         </Row>
         <Row>
           <Col xs={12} md={12}>
-            <h3>Cerchi un ADSL per casa o ufficio?</h3>
+            <h3>Quanto ti senti digitale?</h3>
           </Col>
         </Row>
         <Row>
-          <Col xs={6} md={6}>
-            <Button
-              onClick={this.handleNext( TO_HOME )}
-            >
-              Casa
-            </Button>
-          </Col>
-          <Col xs={6} md={6}>
-            <Button
-              onClick={this.handleNext( TO_UFFICIO )}
-            >
-              Ufficio
-            </Button>
+          <Col xs={12} md={12}>
+            <FormGroup>
+              <Radio inline>
+                1
+              </Radio>
+              {' '}
+              <Radio inline>
+                2
+              </Radio>
+              {' '}
+              <Radio inline>
+                3
+              </Radio>
+            </FormGroup>
           </Col>
         </Row>
       </Grid>
@@ -76,5 +75,5 @@ export default connect(
     nothing,
     push
   }
-)( PiuFacileHomeOrOffice )
+)( PiuFacileAskDigital )
 

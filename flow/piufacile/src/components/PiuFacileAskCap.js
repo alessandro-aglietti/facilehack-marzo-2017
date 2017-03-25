@@ -8,26 +8,25 @@ import {
   Grid,
   Row,
   Col,
-  Button
 } from 'react-bootstrap';
 
 import {
   nothing
 } from '../actions/PiuFacileActions'
 
-export class PiuFacile extends Component {
+export class PiuFacileAskCap extends Component {
 
   constructor( props ) {
     super( props )
     this.state = {}
-    this.handleNext = this.handleNext.bind( this )
   }
 
-  handleNext() {
-    console.log( " Scegli la tua ADSL con +Facile!" )
-    const path = `/phase/home_or_office`
-    this.props.nothing( { "what": path } )
-    this.props.push( path )
+  handleNext( to ) {
+    return () => {
+      console.log( "handleNext to " + to )
+      this.props.nothing( { "what": to } )
+      this.props.push( to )
+    }
   }
 
   render() {
@@ -35,16 +34,7 @@ export class PiuFacile extends Component {
       <Grid>
         <Row>
           <Col xs={12} md={12}>
-            <h1>Landing ADSL</h1>
-          </Col>
-        </Row>
-        <Row>
-          <Col xs={12} md={12}>
-            <Button
-              onClick={this.handleNext}
-            >
-              Confronta le offerte!
-            </Button>
+            <h1>Ask CAP</h1>
           </Col>
         </Row>
       </Grid>
@@ -61,5 +51,5 @@ export default connect(
     nothing,
     push
   }
-)( PiuFacile )
+)( PiuFacileAskCap )
 
