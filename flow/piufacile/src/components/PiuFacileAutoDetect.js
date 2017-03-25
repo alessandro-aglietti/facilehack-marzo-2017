@@ -11,7 +11,8 @@ import {
 } from 'react-bootstrap';
 
 import {
-  nothing
+  nothing,
+  auto_detect_location,
 } from '../actions/PiuFacileActions'
 
 export class PiuFacileAutoDetect extends Component {
@@ -19,6 +20,12 @@ export class PiuFacileAutoDetect extends Component {
   constructor( props ) {
     super( props )
     this.state = {}
+  }
+
+  componentDidMount() {
+    this.props.auto_detect_location().then( ( json ) => {
+      console.log( "componentDidMount auto_detect_location then" )
+    } );
   }
 
   handleNext( to ) {
@@ -50,6 +57,7 @@ const mapStateToProps = ( state ) => ({
 export default connect(
   mapStateToProps, {
     nothing,
+    auto_detect_location,
     push
   }
 )( PiuFacileAutoDetect )
